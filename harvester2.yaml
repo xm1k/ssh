@@ -1,0 +1,19 @@
+scheme_version: 1
+token: harvester
+os:
+  ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4T8/Pl+WjwHveoGUvw4jNYGasHwAgjTsEpU+tx4ILMoi3PARP/Mfx2cW7gJNQUX0hFT4JLgfjn2I+2dH5YiRN7hmP04ejb2Zk5eeBXWjcKV7sUQ6r0ZF1JIJhLtrJbnLfwLKBHAVJP4pOfU9LY2r7eyWpE0OXTHGraSYDA1CSFYiNls271HYJa2IfJxrWCjs9QZAoNsuz27uNJpjK0fK8oNmBdX8X7TEtMcBFDYsLjw9+VTH9YCMTx6UZY/LwndpUhOP0PTf3wVgf968DsHVKPqPBl5rPp/OMlFIsziLH5OYt62mAG72BEShktVScEl6D8ero622GNnCYGW7CESFF da.smirnov@yadro.com
+  hostname: harvester
+  modules:
+    - kvm
+    - nvme
+    - rbd
+    - nbd
+  persistentStatePaths:
+    - /var/lib/rook
+    - /var/lib/ceph
+    - /etc/ceph
+    - /etc/webhook
+
+install:
+  mode: create
