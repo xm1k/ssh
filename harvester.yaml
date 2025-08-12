@@ -17,13 +17,3 @@ os:
 
 install:
   mode: create
-  management_interface:
-    interfaces:
-      - name: ens5
-    method: dhcp
-  force_efi: true
-  device: /dev/sda
-  silent: true
-  poweroff: true
-  debug: true
-  tty: ttyS0
